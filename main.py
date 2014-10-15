@@ -68,7 +68,7 @@ class Panel(webapp2.RequestHandler):
             }
 
             #Inferencia de la plantilla con el HTML correspondiente
-            template = Entorno_Jinja.get_template('index.html')
+            template = Entorno_Jinja.get_template('polymerUI/index.html')
             self.response.write(template.render(plantilla_values))
 
         except:
